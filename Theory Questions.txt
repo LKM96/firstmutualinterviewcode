@@ -1,0 +1,32 @@
+
+1. DI => depedency injection in Spring and Springbot which enables loose coupling for component management to be managed by components.
+
+ IOC => Spring (IoC Container ) creates the objects, configures and combines dependencies, manages their entire life cycle. The Container uses Dependency Injection(DI) to manage 
+	the components that make up the application.
+
+2. Springboot embedded containers => Tomcat
+
+3. Sping cofiguration file name => Config.xml
+
+4. c @Autowired is the annotaion which allows resolving dependencies by field injection
+
+5. a  We invoke an action after loading the spring context by annotating with the @PostContruct annotation
+
+6.a @Controller => Generic Controller Annotation used when the controller is not to be used as a REST but be used probably in MVC Applications which can be accesed by Templates like (Thymeleaaf, jsp etc) while
+    @RestController => is Useful on REST APIs whose endpoints might need to accessed and consumed by Client Applications and Fontends
+	
+  b. @RequestParam => used for accessing the values of the query parameters while
+     @PathVariable used for accessing the values from the URL templates passed together with the request
+
+  c. @ResponseEntity represents an HTTP response, and can include headers, body, and status while 
+     @ResponseBody puts the return value into the body of the response
+  
+  d.  @Component is a generic stereotype for any Spring components or beans, 
+      @Repository is a stereotype for the persistence layer and  
+      @Service is a stereotype for the service layer. 
+   
+7. We can use Spring Batch which provides reusable functions that are essential in processing large volumes of records, including logging/tracing, transaction management, job processing statistics, job restart and resource management.
+   This can also be complenmented by using queueing technologies like Rabbitmq for sequential bulk Information.
+
+8.  In springboot we can use tools like Eureka for server side load balancing.
+
